@@ -1,0 +1,86 @@
+  <div class='w-full h-16 flex justify-between items-center px-16 bg-slate-950 '>
+        <div class="right">
+            <img src="https://cdn.olaelectric.com/ev-discovery-platform/images/ola-logo-13042023.svg" alt="" />
+        </div>
+        <div class="left text-3xl text-white">
+        <FaPlus />
+        <div class="dropdown absolute w-full h-[70%] top-16 left-0 flex ">
+          <div class="img w-1/2 h-full bg-slate-950 flex justify-center items-center">
+             <div class="immgine w-[20vw] h-[29vw] bg-slate-50">
+                 <video autoplay loop muted class="w-full h-full object-cover" src="https://cdn.olaelectric.com/sites/evdp/pages/moveos/moveos_navigation_v2.mp4"></video>
+             </div>
+          </div>
+          <div class="text w-1/2 h-full bg-slate-950 flex justify-center items-center">
+           <div class="links ">
+            <a onMouseMove={move} href="" class=" lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
+              <small class="text-xl tracking-normal">0.1</small>
+            tech and design
+            </a>
+            <a  href="" class="lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
+              <small class="text-xl tracking-normal">0.2</small>
+            ownership
+            </a>
+            <a  href="" class=" lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
+              <small class="text-xl tracking-normal">0.3</small>
+            our company
+            </a>
+            <a  href="" class=" lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
+              <small class="text-xl tracking-normal">0.4</small>
+            acount
+            </a>
+           </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      +++++++++++++++++++++++++++++++++++++++++++
+
+       <div class="page-2 w-full mt-40 justify-between flex px-20">
+    <div class="text w-[30%] h-[100vh] ">
+       <h1 class="text-[#171717] text-5xl">Custom made. <br>For you</h1>
+       <p class="text-[#171717] text-2xl mt-5">Go glossy. Go matt. Go full technicolour. <br> Check out our customisation <br> options here.</p>
+       <div class="how mt-16">
+          <h1 class="text-4xl uppercase" >funk</h1>
+        <div class="text-3xl flex justify-evenly mt-10">
+          <h1 class="border-2 border-gray-900 px-6 uppercase rounded-md">s1 pro</h1>
+          
+          <h2 class="border-2 border-gray-900 px-6 uppercase rounded-md">s1 x</h2>
+          <h1 class="border-2 border-gray-900 px-6 uppercase rounded-md">s1 air</h1>
+        </div>
+     </div> 
+   </div>
+   <div class="img h-[70%] w-[70%] bg-slate-600">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/GBlack_Neon/BuyingFloor_GBlack-neon_Final_02_0004.webp" alt="" class="bg-cover bg-center">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/GBlack_Neon/BuyingFloor_GBlack-neon_Final_02_0003.webp" alt=""  class="bg-cover bg-center">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/GBlack_Neon/BuyingFloor_GBlack-neon_Final_02_0002.webp" alt=""  class="bg-cover bg-center">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/GBlack_Neon/BuyingFloor_GBlack-neon_Final_02_0001.webp" alt=""  class="bg-cover bg-center">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/GBlack_Neon/BuyingFloor_GBlack-neon_Final_02_0000.webp" alt=""  class="bg-cover bg-center">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/GBlack_Neon/BuyingFloor_GBlack-neon_Final_02_0005.webp" alt=""  class="bg-cover bg-center">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+   </div> 
+   </div>
