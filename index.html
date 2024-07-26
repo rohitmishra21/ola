@@ -1,86 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-  <title>Document</title>
-  <style>
-    body{
-      overflow-x: hidden;
-      background: #171717;
-    }
-    *{
-      font-family: "freight big pro";
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  </style>
-</head>
-<body>
-<div class="main">
-  <div class="page-1 w-full h-[100vh] relative mb-72">
-    <div class='w-full h-16 flex justify-between items-center px-16  bg-[#171717] '>
-      <div class="right">
-          <img src="https://cdn.olaelectric.com/ev-discovery-platform/images/ola-logo-13042023.svg" alt="Ola Logo" />
-      </div>
-      <div class="left text-3xl text-white">
-          <i class="ri-add-large-line" id="icon"></i>
-      <div class="dropdown absolute w-full h-[70%] top-16 left-0 flex opacity-0 invisible">
-        <div class="img w-1/2 h-full bg-slate-950 flex justify-center items-center">
-           <div class="immgine w-[20vw] h-[29vw] bg-slate-50 bg-cover bg-center">
-               <video autoplay loop muted class="w-full h-full object-cover" src="https://cdn.olaelectric.com/sites/evdp/pages/moveos/moveos_navigation_v2.mp4"></video>
-           </div>
-        </div>
-        <div class="text w-1/2 h-full bg-slate-950 flex justify-center items-center">
-         <div class="links ">
-          <a href="" class="change lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
-            <small class="text-xl tracking-normal">0.1</small>
-            tech and design
-          </a>
-          <a href="" class="change lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
-            <small class="text-xl tracking-normal">0.2</small>
-            ownership
-          </a>
-          <a href="" class="change lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
-            <small class="text-xl tracking-normal">0.3</small>
-            our company
-          </a>
-          <a href="" class="change lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl">
-            <small class="text-xl tracking-normal">0.4</small>
-            services
-          </a>
-         </div>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="home w-full h-[90vh] bg-[#171717]">
-      <video autoplay muted loop class="bg-cover bg-center" src="vidio/olaa.mp4"></video>
-      <div class="head font-light uppercase absolute top-1/2 left-1/2 text-white -translate-x-1/2 -translate-y-1/2 text-center leading-snug">
-        <h1 class="tracking-widest text-8xl leading-snug">specture</h1>
-        <h1 class="tracking-widest text-2xl">in motion</h1>
-        <button class="px-14 py-3 mt-4 bg-white rounded-full text-[#171717] font-sans font-normal uppercase">discover now</button>
-      </div>
-    </div>
-  </div>
-  <div class="page-2 min-h-[100vh] w-full bg-[#171717] mt-16 text-white overflow-x-hidden">
-     <div>
-      <h1 class="text-white pt-28 text-[6vw] leading-6 relative left-72">Move over Petrol.</h1>
-      <h2 class="text-[6vw] relative left-[40%]">Switch to the Ola.</h2>
-      <video autoplay muted loop src="https://cdn.olaelectric.com/sites/evdp/video/Home_car_film_v2.mp4" class="w-[60%] relative left-[50%] -translate-x-[50%]" id="vidio"></video>
-    </div> 
-  </div>
-  <div class="page-3 min-h-[123vh] w-full bg-white">
+    <title>Document</title>
   
-  </div>
-</div>
+  </head>
+  <body>
+    <div
+      class="cursor text-white text-sm flex text-center items-center justify-center"
+    ></div>
+    <div class="main relative">
+      <div class="page-1 w-full h-[100vh] relative mb-72">
+        <div
+          class="w-full h-16 flex justify-between items-center px-16 bg-[#000]"
+        >
+          <div class="right">
+            <img
+              src="https://cdn.olaelectric.com/ev-discovery-platform/images/ola-logo-13042023.svg"
+              alt="Ola Logo"
+            />
+          </div>
+          <div class="left text-3xl text-white">
+            <i class="fa-solid fa-plus" id="iccon"></i>
+            <div
+              class="dropdown absolute w-full h-[70%] top-16 left-0 flex opacity-0 invisible z-30 bg-[#000]"
+            >
+              <div
+                class="img w-1/2 h-full  flex justify-center items-center"
+              >
+                <div
+                  class="immgine w-[20vw] h-[29vw] bg-black bg-cover bg-center"
+                >
+                  <!-- <video
+                    autoplay
+                    loop
+                    muted
+                    class="w-full h-full object-cover"
+                    src="https://cdn.olaelectric.com/sites/evdp/pages/moveos/moveos_navigation_v2.mp4"
+                  ></video> -->
+                 <video id="he" autoplay muted loop class="h-[100%]" src=""></video>
+
+                </div>
+              </div>
+              <div
+                class="text w-1/2 h-full bg-[#000] flex justify-center items-center"
+              >
+                <div class="links">
+                  <a
+                    
+                    class="change lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+                  >
+                    <small class="text-xl tracking-normal">0.1</small>
+                    tech and design
+                  </a>
+                  <a
+                  
+                    class="change-1 lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+                  >
+                    <small class="text-xl tracking-normal">0.2</small>
+                    ownership
+                  </a>
+                  <a
+                   
+                    class="change-2 lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+                  >
+                    <small class="text-xl tracking-normal">0.3</small>
+                    our company
+                  </a>
+                  <a
+                    class="change-3 lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+                  >
+                    <small class="text-xl tracking-normal">0.4</small>
+                    services
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home w-full h-[90vh] bg-[#171717]">
+          <video
+            autoplay
+            muted
+            loop
+            class="bg-cover bg-center cursor-none"
+            src="vidio/olaa.mp4"
+          ></video>
+          <div
+            class="head font-light uppercase absolute top-1/2 left-1/2 text-white -translate-x-1/2 -translate-y-1/2 text-center leading-snug"
+          >
+            <h1 class="tracking-widest text-8xl leading-snug">specture</h1>
+            <h1 class="tracking-widest text-2xl">in motion</h1>
+            <button
+              class="px-14 py-3 mt-4 bg-white rounded-full text-[#171717] font-sans font-normal uppercase cursor-none"
+            >
+              discover now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="page-2 min-h-[100vh] w-full bg-[#171717] mt-16 text-white overflow-x-hidden"
+      >
+        <div>
+          <h1 class="text-white pt-28 text-[6vw] leading-6 relative left-72">
+            Move over Petrol.
+          </h1>
+          <h2 class="text-[6vw] relative left-[40%]">Switch to the Ola.</h2>
+          <video
+            autoplay
+            muted
+            loop
+            src="https://cdn.olaelectric.com/sites/evdp/video/moveos_section2_video_v3.mp4"
+            class="w-[60%] relative left-[50%] -translate-x-[50%]"
+            id="vidio"
+          ></video>
+        </div>
+      </div>
+      <div class="page-3 min-h-[123vh] w-full p-[100px] bg-[#171717] relative">
+        <div class="string h-[100px] w-full flex justify-center items-center">
+          <svg width="1300" height="160">
+            <path
+              d="M 10 100 Q 500 50 1300 100"
+              stroke="gray"
+              fill="transparent"
+              id="path"
+            />
+          </svg>
+        </div>
+        <div class="elemm flex items-center justify-center relative h-44">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEahjIWUbrbxU1nmRZVoPBQKz87-JaxX-gA&s"
+            alt=""
+            class="imi h-[130%] w-[20%] absolute left-3 object-cover opacity-0"
+          />
+          <div class="tex h-8 overflow-hidden">
+            <img
+              src="https://cdn.olaelectric.com/sites/evdp/pages/home_ipo/ipo_home_featured_ola_s1_pro_logo.svg"
+              alt=""
+              class="ele"
+            />
+            <img
+              src="https://cdn.olaelectric.com/sites/evdp/pages/home_ipo/ipo_home_featured_ola_s1_pro_logo.svg"
+              alt=""
+              class="ele"
+            />
+          </div>
+          <img
+            src="https://cdn.olaelectric.com/sites/evdp/pages/s1pro/s1pro_dt_web_image_06_v2.webp"
+            alt=""
+            class="imi h-[150%] w-[20%] absolute right-10 object-cover opacity-0"
+          />
+        </div>
+
+        <div class="string h-[100px] w-full flex justify-center items-center">
+          <svg width="1300" height="160">
+            <path
+              d="M 10 100 Q 500 50 1300 100"
+              stroke="gray"
+              fill="transparent"
+              id="path"
+            />
+          </svg>
+        </div>
+
+        <div class="elemm flex items-center justify-center relative h-44">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSysCV5-myjpOXQ8E_3p1821nXUmVC3Ip_LDg&s"
+            alt=""
+            class="imi h-[130%] w-[20%] absolute left-3 object-cover opacity-0"
+          />
+          <div class="tex h-8 overflow-hidden">
+            <img
+              src="https://cdn.olaelectric.com/sites/evdp/pages/home_ipo/ipo_home_featured_ola_s1_air_logo.svg"
+              alt=""
+              class="ele"
+              
+            />
+           
+            <img
+              src="https://cdn.olaelectric.com/sites/evdp/pages/home_ipo/ipo_home_featured_ola_s1_air_logo.svg"
+              alt=""
+              class="ele"
+            />
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDA2ZO4oj2z4xwn4geYCn2QqJvXD8pEXpDQ&s"
+            alt=""
+            class="imi h-[150%] w-[20%] absolute right-10 object-cover opacity-0"
+          />
+        </div>
+        <div class="string h-[100px] w-full flex justify-center items-center">
+          <svg width="1300" height="160">
+            <path
+              d="M 10 100 Q 500 50 1300 100"
+              stroke="gray"
+              fill="transparent"
+              id="path"
+            />
+          </svg>
+        </div>
+
+        <div class="elemm flex items-center justify-center relative h-44">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+            class="imi h-[130%] w-[20%] absolute left-3 object-cover opacity-0"
+          />
+          <div class="tex h-9 overflow-hidden">
+            <img
+              src="https://cdn.olaelectric.com/sites/evdp/icons/icon_s1x_212121.svg"
+              alt=""
+              class="ele"
+            />
+            <img
+              src="https://cdn.olaelectric.com/sites/evdp/icons/icon_s1x_212121.svg"
+              alt=""
+              class="ele"
+            />
+          </div>
+          <img
+            src="https://cdn.olaelectric.com/sites/evdp/pages/s1x/s1x-design-image3-07112023.webp"
+            alt=""
+            class="imi h-[150%] w-[20%] absolute right-10 object-cover opacity-0"
+          />
+        </div>
+
+        <div class="string h-[100px] w-full flex justify-center items-center">
+          <svg width="1300" height="160">
+            <path
+              d="M 10 100 Q 500 50 1300 100"
+              stroke="gray"
+              fill="transparent"
+              id="path"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="page-4 min-h-[100vh] w-full">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/MBlue_White/BuyingFloor_White-Mblue_Final_02_0001.webp"
+                alt=""
+                class="object-cover"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/MBlue_White/BuyingFloor_White-Mblue_Final_02_0002.webp"
+                alt=""
+                class="object-cover"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/MBlue_White/BuyingFloor_White-Mblue_Final_02_0003.webp"
+                alt=""
+                class="object-cover"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/MBlue_White/BuyingFloor_White-Mblue_Final_02_0004.webp"
+                alt=""
+                class="object-cover"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/MBlue_White/BuyingFloor_White-Mblue_Final_02_0005.webp"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.olaelectric.com/ev-discovery-platform/s1-x/MBlue_White/BuyingFloor_White-Mblue_Final_02_0000.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="footer w-full h-[60vh] flex justify-around font-sans mt-40">
+        <div
+          class="right text-slate-200 flex capitalize w-[70%] justify-evenly items-start"
+        >
+          <img
+            src="https://cdn.olaelectric.com/ev-discovery-platform/images/ola-logo-13042023.svg"
+            alt=""
+          />
+          <div class="flex flex-col gap-6 text-xl font-sans">
+            <h1 class="uppercase font-semibold text-slate-50">product</h1>
+            <h1>ola s1 pro</h1>
+            <h1>ola s1 air</h1>
+            <h1>ola s1 x+</h1>
+            <h1>motorcycle</h1>
+          </div>
+          <div class="flex flex-col gap-6 text-xl font-sans">
+            <h1 class="uppercase font-semibold text-slate-50">
+              tech and design
+            </h1>
+            <h1>tech</h1>
+            <h1>software</h1>
+            <h1>software</h1>
+            <h1>giga factory</h1>
+            <h1>cell tech</h1>
+            <h1>manufacuring</h1>
+            <h1>design</h1>
+            <h1>perfomane</h1>
+          </div>
+          <div class="flex flex-col gap-6 text-xl font-sans">
+            <h1 class="uppercase font-semibold text-slate-50">ownership</h1>
+            <h1>exp center</h1>
+            <h1>hypercharger</h1>
+            <h1>accecenior</h1>
+            <h1>community</h1>
+            <h1>referial</h1>
+            <h1>service</h1>
+          </div>
+          <div class="flex flex-col gap-6 text-xl font-sans">
+            <h1 class="uppercase font-semibold text-slate-50">company</h1>
+            <h1>about us</h1>
+            <h1>inventor</h1>
+            <h1>newsroom</h1>
+            <h1>career</h1>
+            <h1>blogs</h1>
+            <h1>delership</h1>
+            <h1>k1>curitim</h1>
+          </div>
+        </div>
+        <div class="icon text-gray-300 text-xl font-sans flex gap-6">
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-linkedin-box-fill"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-facebook-circle-line"></i>
+          <i class="ri-youtube-fill"></i>
+        </div>
+      </div>
+      <div class="last w-full relative h-[40vh]">
+        <div class="string h-[100px] w-full flex justify-center items-center">
+          <svg width="1300" height="160">
+            <path
+              d="M 10 100 Q 500 50 1300 100"
+              stroke="red"
+              fill="transparent"
+              id="path"
+            />
+          </svg>
+        </div>
+        <div
+          class="h-32 w-32 bg-slate-100 rounded-full flex justify-center items-center absolute right-10 top-0 blur-3xl"
+        ></div>
+        <div
+          class="le h-14 w-14 bg-white rounded-full flex justify-center items-center absolute right-20 top-9"
+        >
+          <img
+            src="https://cdn.olaelectric.com/ev-discovery-platform/New-Homepage/chat.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="app.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>
